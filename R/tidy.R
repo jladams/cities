@@ -17,3 +17,5 @@ mo1 <- tidy(mo1)
 mo2 <- tidy(mo2)
 
 df <- do.call("rbind", list(ch1, mo1, mo2))
+
+write.csv(df, "./data/tidy/cities.csv", row.names = FALSE)
